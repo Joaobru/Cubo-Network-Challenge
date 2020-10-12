@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Logo" title="Logo" src="img/logo.svg">
+    <img alt="Logo" title="Logo" src="assets/cuboLogo.svg">
 </h1>
 
 <p align="center"> 
@@ -14,7 +14,7 @@
 ### Home 
 
 <p align="center">
-  <img alt="Landing" title="Landing" src="assets/cuboNetwork.PNG">
+  <img alt="Landing" title="Landing" src="assets/Home.PNG">
 </p>
 
 ## :bulb: Funcionalidades
