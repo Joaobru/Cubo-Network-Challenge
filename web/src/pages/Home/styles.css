@@ -1,0 +1,13 @@
+.containerData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+@media(min-width: 660px) {
+  .containerData {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
