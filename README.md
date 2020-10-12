@@ -39,7 +39,7 @@ Além disto é bom ter um editor para trabalhar com o código como o [VSCode](ht
 $ git clone https://github.com/Joaobru/Cubo-Newtwork-Challenge.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd Cubo-Newtwork-Challenge
+$ cd Cubo-Newtwork-Challenge-master
 
 # Execute o comando nas pastas server/web para instalar todas as dependências
 $ npm install ou yarn
@@ -64,8 +64,6 @@ $ npm start ou yarn start
   * [Node.js](https://nodejs.org/en/) (Back-End);
 
   * [ReactJS](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) (Web Front-End);
-
-  * [React-Native](https://reactnative.dev/) (Mobile Front-End);
 
   * [Postgres](https://www.postgresql.org/) e [Sequelize](https://sequelize.org/) (Banco de Dados);
 
