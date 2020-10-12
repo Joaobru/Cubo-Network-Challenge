@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Logo" title="Logo" src="assets/cuboLogo.svg">
+    <img alt="Logo" title="Logo" src="assets/cuboLogo.svg" style="max-width: 250px; width: 100%;">
 </h1>
 
 <p align="center"> 
