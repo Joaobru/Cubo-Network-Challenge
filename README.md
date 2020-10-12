@@ -14,7 +14,7 @@
 ### Home 
 
 <p align="center">
-  <img alt="Landing" title="Landing" src="assets/cuboNewtwork.PNG">
+  <img alt="Landing" title="Landing" src="assets/cuboNetwork.PNG">
 </p>
 
 ## :bulb: Funcionalidades
