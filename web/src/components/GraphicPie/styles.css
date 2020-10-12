@@ -1,0 +1,13 @@
+.containerGraphicPie {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@media(min-width: 660px) {
+  .containerGraphicPie {
+    width: 50%;
+  }
+}

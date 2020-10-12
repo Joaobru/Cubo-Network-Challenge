@@ -1,0 +1,14 @@
+.inputNav{
+  padding-left: 1%;
+  border-radius: 3%;
+  border: 0;
+  width: 75%;
+  height: 20%;
+}
+
+@media(min-width: 660px) {
+  .inputNav{
+    height: 45%;
+    width: 18%;
+  }
+}
