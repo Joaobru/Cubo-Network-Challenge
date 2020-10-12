@@ -47,7 +47,7 @@ const TableComponent: React.FunctionComponent<TableProps> = (props) => {
                 <th scope="row">{user.id}</th>
                 <td>{user.firstName}</td>
                 <td>{user.lastName}</td>
-                <td>{user.participation}</td>
+                <td>{user.participation + "%"}</td>
               </tr>
             )
           })}    

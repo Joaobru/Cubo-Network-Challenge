@@ -28,6 +28,9 @@ const NavBar:React.FunctionComponent<sendInformations> = ({ firstName, setFirstN
         lastName: lastName,
         participation: participation,
       }).then(() => {
+        setFirstName("");
+        setLastName("");
+        setParticipation("");
         return alert('Dados gravados com sucesso');
       }).catch(err => console.log(err));
     }

@@ -23,7 +23,7 @@ function Home() {
       <TitleDesc/>
       <div className="containerData">
         <Table listTable={listTable} setList={setListTable}/>
-        <GraphicPie listTable={listTable} setList={setListTable}/>
+        <GraphicPie />
       </div>
     </div>
   );

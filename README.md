@@ -1,44 +1,74 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    <img alt="Logo" title="Logo" src="img/logo.svg">
+</h1>
 
-## Available Scripts
+<p align="center"> 
+  Este projeto foi desenvolvido com o intuito de melhorar minhas habilidades em
+  ReactJS + TypeScript, sendo um desafio do repositório https://github.com/felipefialho/frontend-challenges, que reúne diversos desafios Front-End.
+  <br>
+  Você pode testar a aplicação em: https://stupefied-turing-6a35f2.netlify.app
+</p>
 
-In the project directory, you can run:
+## :computer: Aplicação
 
-### `yarn start`
+### Home 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">
+  <img alt="Landing" title="Landing" src="assets/cuboNewtwork.PNG">
+</p>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## :bulb: Funcionalidades
 
-### `yarn test`
+* Criar Usuários;
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Listar os dados dos Usuários em uma tabela;
 
-### `yarn build`
+* Listar os dados dos Usuários em um gráfico.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :wrench: Pré-requisitos
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como o [VSCode](https://code.visualstudio.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :rocket: Para rodar a aplicação
 
-### `yarn eject`
+```bash
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Clone este repositório
+$ git clone https://github.com/Joaobru/Cubo-Newtwork-Challenge.git
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd Cubo-Newtwork-Challenge
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Execute o comando nas pastas server/web para instalar todas as dependências
+$ npm install ou yarn
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Antes configure os dados do seu banco, na pasta 
+# server/src/config/database.js para criar o banco de dados
+$ yarn sequelize db:create
 
-## Learn More
+# Execute o comando para criar as tabelas
+$ yarn sequelize db:migrate
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Execute a aplicação em modo de desenvolvimento, é importante executar este
+# comando primeiro no server depois no web ou mobile
+$ npm start ou yarn start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+
+```
+
+## 🛠 Tecnologias
+
+  * [Node.js](https://nodejs.org/en/) (Back-End);
+
+  * [ReactJS](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) (Web Front-End);
+
+  * [React-Native](https://reactnative.dev/) (Mobile Front-End);
+
+  * [Postgres](https://www.postgresql.org/) e [Sequelize](https://sequelize.org/) (Banco de Dados);
+
+
+
+

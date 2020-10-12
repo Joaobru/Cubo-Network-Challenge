@@ -1,3 +1,7 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 module.exports = {
   dialect: "postgres",
   host: process.env.DB_HOST,

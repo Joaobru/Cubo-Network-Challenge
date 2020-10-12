@@ -7,16 +7,11 @@ import api from '../../services/api';
 import { Doughnut } from "react-chartjs-2";
 import { MDBContainer } from "mdbreact";
 
-interface TableProps {
-  listTable: any;
-  setList: any;
-}
-
 function filteredParticipation(list:any){
-  var obj = [list[0].participation + "%"]
+  var obj = [list[0].participation]
 
   for(let i = 1; i < list.length; i++){
-    obj = [...obj, list[i].participation + "%"];  
+    obj = [...obj, list[i].participation];  
   }
 
   return obj;
@@ -43,7 +38,7 @@ function filteredColors(list:any) {
   return obj;
 }
 
-const GraphicPie: React.FunctionComponent<TableProps> = (props) => {
+function GraphicPie() {
 
   const [dataDoughnut, setDataDoughnut] = useState({});
   const [dataList, setDataList] = useState('');
