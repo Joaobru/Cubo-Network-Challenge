@@ -9,9 +9,9 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   setValue: Function;
 }
 
-const Input:React.FunctionComponent<InputProps> = ({ name, slug, value, setValue, ...rest }) => {
+const Input:React.FunctionComponent<InputProps> = ({ name, slug, value, setValue }) => {
   return (
-      <input value={value} onChange={(e) => { setValue(e.target.value)}} className="inputNav" placeholder={slug} name={name} type="text"/>
+      <input value={value} onChange={(e) => { setValue( e.target.value ) }} className="inputNav" placeholder={slug} name={name} type="text"/>
   );
 }
 

@@ -3,7 +3,9 @@ import './styles.css'
 import React from 'react';
 
 import Input from '../Input';
-import api from '../../services/api';
+
+import { user } from '../Table';
+import { sendInfo } from '../../utils/sendInfo';
 
 interface sendInformations {
   firstName: string;
@@ -14,34 +16,22 @@ interface sendInformations {
 
   participation: string;
   setParticipation: Function;
+
+  listTable: Array<user>;
+  setListTable: Function;
 }
 
-const NavBar:React.FunctionComponent<sendInformations> = ({ firstName, setFirstName, lastName, setLastName, participation, setParticipation, ...rest }) => {
-  
-  function sendInfo(){
-
-    if(firstName === "" || lastName === "" || participation === ""){
-     return alert("Por favor preencha todos os campos!")
-    } else {  
-      api.post('user', {
-        firstName: firstName,
-        lastName: lastName,
-        participation: participation,
-      }).then(() => {
-        setFirstName("");
-        setLastName("");
-        setParticipation("");
-        return alert('Dados gravados com sucesso');
-      }).catch(err => console.log(err));
-    }
-
-  }
+const NavBar:React.FunctionComponent<sendInformations> = ({ firstName, setFirstName, lastName, setLastName, participation, setParticipation, listTable ,setListTable }) => {
   return (
     <div className="navBarComponent">
       <Input value={firstName} setValue={setFirstName}  slug = "First name" name = "firstName"/>
       <Input value={lastName} setValue={setLastName}  slug = "Last Name" name = "lastName"/>
       <Input value={participation} setValue={setParticipation}  slug = "Participation" name = "participation"/>
-      <button onClick={()=>sendInfo()} className="buttonSendNav">Send</button>
+      <button 
+      onClick={()=>
+      sendInfo(firstName, lastName, participation, setFirstName,
+      setLastName, setParticipation, setListTable, listTable)}
+      className="buttonSendNav">Send</button>
     </div>
   );
 }

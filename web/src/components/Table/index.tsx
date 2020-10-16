@@ -1,33 +1,25 @@
 import './styles.css';
 
-import React, {useEffect} from 'react';
+import React from 'react';
 
 import { Table } from 'reactstrap';
 
-import api from '../../services/api';
-
 var counter = 0;
 
-interface TableProps {
-  listTable: any;
-  setList: any;
+export interface TableProps {
+  listTable:  Array<user>;
+  setList: Function;
 }
 
-interface userArray{
-  id: String;
-  firstName: String;
-  lastName: String;
-  participation: String;
+export interface user {
+  id: string;
+  firstName: string;
+  lastName: string;
+  participation: string;
+  color: string;
 }
 
 const TableComponent: React.FunctionComponent<TableProps> = (props) => {
-
-  useEffect(() => {
-    api.get(`user`).then(response => {
-      const listUser = response.data;
-      props.setList(listUser);
-    }).catch(err => console.log(err));
-  },[])
 
   return (
       <>
@@ -41,7 +33,7 @@ const TableComponent: React.FunctionComponent<TableProps> = (props) => {
           </tr>
         </thead>
         <tbody>
-          {props.listTable.map((user:userArray,)=>{
+          {props.listTable.map((user:user,)=>{
             return (
               <tr key={counter ++}>
                 <th scope="row">{user.id}</th>
