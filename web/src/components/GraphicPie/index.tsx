@@ -29,7 +29,7 @@ useEffect(()=>{
   },[props.listTable]);
 
   useEffect(()=>{
-    if(dataList === '' ){
+    if(dataList === ''){
       console.log("Error");
     } else{
       setDataDoughnut({ 
@@ -42,7 +42,7 @@ useEffect(()=>{
         }
       ]})       
     }
-  },[dataList])
+  },[dataList, colors, participation, names])
 
     return (
     <MDBContainer className="containerGraphicPie" >

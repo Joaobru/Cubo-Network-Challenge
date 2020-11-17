@@ -17,7 +17,7 @@ function Home() {
   const [participation, setParticipation] = useState('');
 
   useEffect(() => {
-
+    
     getListData(setListTable, setLoading);
 
   },[])
@@ -28,7 +28,8 @@ function Home() {
         firstName={firstName} setFirstName={setFirstName}
         lastName={lastName} setLastName={setLastName} 
         participation={participation} setParticipation={setParticipation}
-        listTable={listTable} setListTable={setListTable}
+        listTable={listTable} setListTable={setListTable} 
+        setLoading={setLoading}
       />  
       <TitleDesc/>
       
