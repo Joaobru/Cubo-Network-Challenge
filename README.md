@@ -6,7 +6,7 @@
   Este projeto foi desenvolvido com o intuito de melhorar minhas habilidades em
   ReactJS + TypeScript, sendo um desafio do repositório https://github.com/felipefialho/frontend-challenges, que reúne diversos desafios Front-End.
   <br>
-  Você pode testar a aplicação em: https://app.netlify.com/sites/brave-babbage-18ccf2/overview
+  Você pode testar a aplicação em: https://brave-babbage-18ccf2.netlify.app/
     
 ## :computer: Aplicação
 
