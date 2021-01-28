@@ -1,7 +1,7 @@
-import axios from 'axios';
+import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'https://cubo-network.herokuapp.com/',
-});
+  baseURL: 'https://cubo-network.herokuapp.com/'
+})
 
-export default api;
+export default api

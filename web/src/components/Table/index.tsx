@@ -1,13 +1,13 @@
-import './styles.css';
+import './styles.css'
 
-import React from 'react';
+import React from 'react'
 
-import { Table } from 'reactstrap';
+import { Table } from 'reactstrap'
 
-var counter = 0;
+let counter = 0
 
 export interface TableProps {
-  listTable:  Array<user>;
+  listTable: Array<user>;
   setList: Function;
 }
 
@@ -19,8 +19,7 @@ export interface user {
   color: string;
 }
 
-const TableComponent: React.FunctionComponent<TableProps> = (props) => {
-
+function TableComponent ({ listTable }:TableProps) {
   return (
       <>
       <Table bordered>
@@ -33,21 +32,20 @@ const TableComponent: React.FunctionComponent<TableProps> = (props) => {
           </tr>
         </thead>
         <tbody>
-          {props.listTable.map((user:user,)=>{
+          {listTable.map((user:user) => {
             return (
-              <tr key={counter ++}>
+              <tr key={counter++}>
                 <th scope="row">{user.id}</th>
                 <td>{user.firstName}</td>
                 <td>{user.lastName}</td>
-                <td>{user.participation + "%"}</td>
+                <td>{user.participation + '%'}</td>
               </tr>
             )
-          })}    
+          })}
         </tbody>
       </Table>
       </>
-  );
+  )
 }
 
-export default TableComponent;
-
+export default TableComponent

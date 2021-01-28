@@ -1,6 +1,6 @@
-import './styles.css';
+import './styles.css'
 
-import React, { InputHTMLAttributes } from 'react';
+import React, { InputHTMLAttributes } from 'react'
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name:string;
@@ -10,11 +10,10 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   setValue: Function;
 }
 
-const Input:React.FunctionComponent<InputProps> = ({ name, slug, value, setValue, type }) => {
+const Input = ({ name, slug, value, setValue, type }:InputProps) => {
   return (
-      <input value={value} onChange={(e) => { setValue( e.target.value ) }} className="inputNav" placeholder={slug} name={name} type={type}/>
-  );
+      <input value={value} onChange={(e) => { setValue(e.target.value) }} className="inputNav" placeholder={slug} name={name} type={type}/>
+  )
 }
 
-export default Input;
-
+export default Input

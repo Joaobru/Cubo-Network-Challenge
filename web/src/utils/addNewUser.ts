@@ -1,6 +1,6 @@
-import { user } from '../components/Table';
+import { user } from '../components/Table'
 
-export function addNewUser(setState:Function, list:Array<user>, firstName:string, lastName:string, participation:string){ 
-  var id = list.length + 1;
+export function addNewUser (setState:Function, list:Array<user>, firstName:string, lastName:string, participation:string) {
+  const id = list.length + 1
   setState([...list, { id, firstName, lastName, participation }])
 }

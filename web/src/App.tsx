@@ -1,15 +1,15 @@
 import './assets/global.css'
 
-import React from 'react';
+import React from 'react'
 
-import Routes from './routes';
+import Routes from './routes'
 
-function App() {
+function App () {
   return (
     <div className="App">
       <Routes/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
